@@ -4,17 +4,23 @@
 # @Email : 383505002@qq.com
 # @File : test1.py
 
-class C(object):
+class Man:
+    """男人"""
     def __init__(self):
-        self._x = None
+        self.__idea = "Love"
 
-    def getx(self):
-        return self._x
+    def setIdea(self, newIdea):
+        """不能不爱"""
+        if newIdea != "Love":
+            print("我只爱你！不要别的……")
 
-    def setx(self, value):
-        self._x = value
+    def getIdea(self):
+        """看看你到底爱不爱"""
+        print("我%s你！" %(self.__idea))
 
-    def delx(self):
-        del self._x
-
-    x = property(getx, setx, delx, "I'm the 'x' property.")
+        
+m = Man()
+m.getIdea()
+m.setIdea("Hate")
+m.getIdea()
+print(m._Man__idea) 
