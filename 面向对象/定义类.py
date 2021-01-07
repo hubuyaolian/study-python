@@ -5,7 +5,7 @@
 # @File : 定义类.py
 
 class Student(object):
-    '''sssss'''
+    """"""
     # __init__是一个特殊方法用于在创建对象时进行初始化操作
     # 通过这个方法我们可以为学生对象绑定name和age两个属性
     def __init__(self, name, age):
@@ -23,6 +23,8 @@ class Student(object):
         else:
             print('%s正在观看岛国爱情大电影.' % self.name)
 
+
+
 def main():
     # 创建学生对象并指定姓名和年龄
     stu1 = Student('骆昊', 38)
@@ -33,6 +35,7 @@ def main():
     stu2 = Student('王大锤', 15)
     stu2.study('思想品德')
     stu2.watch_movie()
+    print(Student.__dict__)
 
 
 if __name__ == '__main__':
