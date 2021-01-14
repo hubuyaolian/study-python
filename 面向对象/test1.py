@@ -4,8 +4,8 @@
 # @Email : 383505002@qq.com
 # @File : test1.py
 coordinate = []
-for x in range(1, 66):
-    for y in range(7, 66):
+for x in range(1, 54):
+    for y in range(7, 54):
         tmp = {}
         tmp["x"] = x
         tmp["y"] = y
