@@ -1,9 +1,20 @@
+# -*- encoding: utf-8 -*-
+'''
+@File    :   @property使用.py
+@Time    :   2021/01/16 14:57:01
+@Author  :   huy
+@Version :   1.0
+@Contact :   383505002@qq.com
+'''
+
+# here put the import lib
+
 class Persion:
     def __init__(self,name):
         self.__name = name
     @property
     def name(self):
-        return self.__name +'sb'
+        return self.__name
  
     @name.setter#传一个参数
     def nameset(self,new_name):
