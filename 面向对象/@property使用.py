@@ -14,7 +14,7 @@ class Persion:
         self.__name = name
     @property
     def name(self):
-        return self.__name
+        return self.__name+"shhd"
  
     @name.setter#传一个参数
     def nameset(self,new_name):

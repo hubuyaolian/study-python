@@ -15,3 +15,5 @@ print(avg(11))
 print(avg(12))
 print(new_avg(12))
 
+
+
